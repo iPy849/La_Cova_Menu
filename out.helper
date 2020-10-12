@@ -1,0 +1,84 @@
+
+        <div class="row mb-0 dash-line mx-1">
+            <div class="col-6 product-name">
+                <p>Crema de Queso</p>
+            </div>
+            <div class="col price">
+                <p>2.5</p>
+            </div>
+            <div class="col price">
+                <p>62.5</p>
+            </div>
+        </div>
+
+        
+
+        <div class="row mb-0 dash-line mx-1">
+            <div class="col-6 product-name">
+                <p>Crema de Jamón</p>
+            </div>
+            <div class="col price">
+                <p>2.5</p>
+            </div>
+            <div class="col price">
+                <p>62.5</p>
+            </div>
+        </div>
+
+        
+
+        <div class="row mb-0 dash-line mx-1">
+            <div class="col-6 product-name">
+                <p>Crema de Tomate</p>
+            </div>
+            <div class="col price">
+                <p>2.5</p>
+            </div>
+            <div class="col price">
+                <p>62.5</p>
+            </div>
+        </div>
+
+        
+
+        <div class="row mb-0 dash-line mx-1">
+            <div class="col-6 product-name">
+                <p>Crema de Pollo</p>
+            </div>
+            <div class="col price">
+                <p>2.5</p>
+            </div>
+            <div class="col price">
+                <p>62.5</p>
+            </div>
+        </div>
+
+        
+
+        <div class="row mb-0 dash-line mx-1">
+            <div class="col-6 product-name">
+                <p>Crema de Mariscos</p>
+            </div>
+            <div class="col price">
+                <p>3.0</p>
+            </div>
+            <div class="col price">
+                <p>75.0</p>
+            </div>
+        </div>
+
+        
+
+        <div class="row mb-0 dash-line mx-1">
+            <div class="col-6 product-name">
+                <p>Crema de Champiñones</p>
+            </div>
+            <div class="col price">
+                <p>3.0</p>
+            </div>
+            <div class="col price">
+                <p>75.0</p>
+            </div>
+        </div>
+
+        

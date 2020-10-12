@@ -1,0 +1,48 @@
+/*Menu*/
+
+/*Encabezados*/
+.menu-title{
+    font-size: 28px;
+    text-align: start;
+}
+
+.menu-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-price h2{
+    display: block;
+    padding: 0;
+    font-size: 12px;
+}
+
+.four-cols{
+    font-size: 14px;
+}
+
+.four-cols h2:first-child{
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+/*End Encabezados*/
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 10px;
+}
+
+.product-name{
+    padding: 0;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.dash-line{
+    border-bottom: 1px solid rgb(143, 143, 143);
+}
