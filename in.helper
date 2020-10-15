@@ -1,7 +1,342 @@
-Margarita
+#Aperitivo
+1
+Aceitunas verdes
+2.00
+1
+Prosciutto con rodajas de tomate y cebolla
+8.20
+1
+Pan con ajo
+1.75
+1
+Pan con ajo y queso
+2.75
+1
+Brusqueta
+2.75
+1
+Brusqueta y queso
+3.75
+1
+Coctel de Marisco a la piña
+6.80
+
+
+
+#Para Picar
+1
+Croquetas con salsa agridulce
+3.00
+1
+Entremés de jamon y queso
+5.50
+1
+Cacahuetes
+1.50
+1
+Eperlan
+6.00
+
+
+
+#Cremas
+1
+Crema de queso
+2.50
+1
+Crema de jamon
+2.50
+1
+Crema de tomate
+2.50
+1
+Crema de pollo
+2.50
+1
+Crema de mariscos
+3.00
+1
+Crema de champiñones
+3.00
+
+
+/*
+    En vez de grande, le pongo familiar
+*/
+#Nuestras Famosas Pizzas
+3
+Pizza base
 4.85
-121.75
 7.95
-198.75
 10.85
-271.25
+
+
+
+#Agregos
+3
+Ajo
+0.85
+1.10
+1.75
+3
+Cebolla
+0.85
+1.10
+1.75
+3
+Champiñones
+0.85
+1.10
+1.75
+3
+Piña
+0.85
+1.10
+1.75
+3
+Tomate natural
+0.85
+1.10
+1.75
+3
+Pimiento
+0.85
+1.10
+1.75
+3
+Carne
+0.85
+1.10
+1.75
+3
+Chorizo
+0.85
+1.10
+1.75
+3
+Tocineta
+0.85
+1.10
+1.75
+3
+Jamon
+1.00
+2.00
+3.00
+3
+Queso
+1.00
+2.00
+3.00
+3
+Atun
+1.00
+2.00
+3.00
+3
+Aceitunas
+1.00
+2.00
+3.00
+3
+Camarones
+3.00
+5.00
+6.75
+3
+Langosta
+3.75
+7.00
+8.75
+
+
+/*
+    Poner los ingredientes que llevan
+*/
+#Especialidades de Pizzas
+3
+Margarita
+5.55
+8.75
+12.50
+3
+Hawaiana
+6.55
+10.15
+14.10
+3
+Napolitana
+6.75
+10.75
+14.55
+3
+Mediterránea
+7.40
+11.25
+15.85
+3
+Prosciutto
+8.25
+13.25
+18.05
+3
+Cuatro estaciones
+8.75
+12.95
+15.85
+3
+Camarón
+8.25
+12.35
+17.85
+3
+Langosta
+9.20
+13.45
+19.60
+3
+Marinera
+10.80
+15.65
+19.05
+
+
+
+#Pastas
+1
+Spaghettis, penne o rigatoni - base
+5.75
+1
+Pasta alfredo
+7.95
+1
+Pasta carbonara
+8.95
+1
+Pasta a la marinera
+11.95
+1
+Pasta al oleo
+6.75
+1
+Rigatoni a la Vodka
+7.65
+1
+Pasta al horno
+7.65
+1
+Penne Arrabiata
+6.75
+1
+Pasta con camarones
+9.50
+1
+Pasta con langosta
+10.95
+
+
+#Platos principales
+
+
+
+#Pescados y Mariscos
+1
+Filete de pescado al limón
+9.00
+1
+Filete de pescado grillé con salsa Maytre D'Hotel
+9.00
+1
+Camarón al ajillo
+9.50
+
+
+
+#Carnes
+1
+Pollo a la parmesana
+8.75
+1
+Filete mignon
+11.95
+1
+Filete saltimboca
+13.00
+
+
+
+#Postres
+1
+Sundae
+2.75
+1
+Ensalada de helado
+3.75
+
+
+
+#Infusiones
+1
+Café expresso
+1.00
+1
+Café americano
+1.00
+1
+Café cortado
+1.85
+1
+Capuchino
+2.00
+1
+Café con leche
+2.00
+
+
+
+#Bebidas
+1
+Agua (nacionales)
+1.00
+1
+Agua (importada)
+2.00
+1
+Agua Tónica (nacional)
+1.00
+1
+Agua Tónica (importada)
+2.50
+1
+Refrescos (nacionales)
+1.00
+1
+Refrescos (importados)
+1.50
+1
+Malta 
+1.00
+1
+RedBull
+3.00
+1
+Cervezas (nacionales)
+2.00
+1
+Cervezas (importadas)
+2.50
+1
+Micheladas (con cerveza nacional)
+2.50
+1
+Micheladas (con cerveza importad)
+3.00
+1
+Copa de vino
+2.75
+
+
+
+#Coctelería - 3cuc
+
++

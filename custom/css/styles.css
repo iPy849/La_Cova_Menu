@@ -6,16 +6,24 @@
     text-align: start;
 }
 
+.cols-3-header{
+    font-size: 24px;
+}
+
+.little-header{
+    font-size: 20px;
+    display: block;
+}
+
 .menu-price{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .menu-price h2{
-    display: block;
-    padding: 0;
-    font-size: 12px;
+    text-align: center  ;
+    font-size: 10px;
 }
 
 .four-cols{
@@ -30,19 +38,33 @@
 
 /*End Encabezados*/
 
-.price {
+/* Product */
+.price{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 10px;
+
+}
+
+.price > p{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .product-name{
-    padding: 0;
     font-size: 14px;
     font-weight: bolder;
 }
 
 .dash-line{
-    border-bottom: 1px solid rgb(143, 143, 143);
+    border-bottom: 1px solid rgb(177, 177, 177);
 }
+/* End Product */
+
+/* View Controller*/
+.disable{
+    display: none;
+}
+/* End View Controller */

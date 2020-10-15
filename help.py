@@ -1,25 +1,45 @@
+'''
+    Este generador de codigo tiene las siguientes caracteristicas:
+    Los lineas que comiencen con:
+    '#' se traducen a comentario html
+    '/' inician un saltos de lineas en los comentarios del archivo externo
+    '*' si hay saltos de lineas, y se encuentra este simbolo entonces para el salto de lineas
+    '' linea vacia, se salta
+
+    Formato para poner los productos:
+    primera linea: cuantos precios tiene el producto (categoria del producto)
+    segunda linea: nombre del producto
+    tercera a quinta linea: precio del producto (segun la categoria del producto)
+'''
 class Cat1Product:
 
     def __init__(self, name: str):
         self.name = name
-        self.cuc = float(input())
-        self.cup = float(input())
+        self.min = float(input())
+
+    def roundFloat(self, num: float) -> str:
+        try:
+            splitted_number = str(num).split('.')
+            if len(splitted_number[1]) <= 2:
+                if len(splitted_number[1]) < 2:
+                    splitted_number[1] += '0'
+                return splitted_number[0] + '.' + splitted_number[1]
+            else:
+                return splitted_number[0] + '.' + splitted_number[1][0] + splitted_number[1][1]
+        except:
+            raise Exception("Error de formato: Los precios deben tener '.' obligatoriamente")
     
     def __generate_row_code(self) -> str:
-        html = '''
-        <div class="row mb-0 dash-line mx-1">
-            <div class="col-6 product-name">
-                <p>{}</p>
+        html = f'''
+        <div class="row dash-line">
+            <div class="col-10 product-name">
+                <p>{self.name}</p>
             </div>
-            <div class="col price">
-                <p>{}</p>
-            </div>
-            <div class="col price">
-                <p>{}</p>
+            <div class="col-2 price">
+                <p>{self.roundFloat(self.min)}</p>
             </div>
         </div>
-
-        '''.format(self.name, self.cuc, self.cup)
+        '''
         return html
 
     def generate_row(self) -> str:
@@ -30,32 +50,24 @@ class Cat2Product (Cat1Product):
 
     def __init__(self, name: str):
         super().__init__(name)
-        self.grcuc = float(input())
-        self.grcup = float(input())
+        self.max = float(input())
     
     def __generate_row_code(self) -> str:
-        html = '''
-        <div class="row mb-0 dash-line mx-1">
-            <div class="col-4 product-name">
-                <p>{}</p>
+        html = f'''
+        <div class="row dash-line">
+            <div class="col-8 product-name">
+                <p>{self.name}</p>
             </div>
             <div class="col-2 price">
-                <p>{}</p>
+                <p>{self.roundFloat(self.min)}</p>
             </div>
             <div class="col-2 price">
-                <p>{}</p>
-            </div>
-            <div class="col-2 price">
-                <p>{}</p>
-            </div>
-            <div class="col-2 price">
-                <p>{}</p>
+                <p>{self.roundFloat(self.max)}</p>
             </div>
         </div>
-
-        '''.format(self.name, self.cuc, self.cup, self.grcuc, self.grcup)
+        '''
         return html
-    
+
     def generate_row(self) -> str:
         return self.__generate_row_code()
         
@@ -64,113 +76,67 @@ class Cat3Product (Cat1Product):
 
     def __init__(self, name: str):
         super().__init__(name)
-        self.medcuc = float(input())
-        self.medcup = float(input())
-        self.grcuc = float(input())
-        self.grcup = float(input())
+        self.mid = float(input())
+        self.max = float(input())
     
     def __generate_row_code(self) -> str:
-        html = '''
-        <div class="dash-line">
-            <div class="product-name mx-1 pt-1">
-                <p>{}</p>
+        html = f'''
+        <div class="row dash-line">
+            <div class="col-6 product-name">
+                <p>{self.name}</p>
             </div>
-            <div class="row mx-1">
-                <div class="col-2 product-name">
-                    <div class="menu-price">
-                        <div class="four-cols">
-                            <div class="menu-price">
-                                <div class="four-cols">
-                                    <h2>Pequeño</h2>
-                                    <h2>CUC</h2>
-                                    <p class="price">{}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 product-name">
-                    <div class="menu-price">
-                        <div class="four-cols">
-                            <div class="menu-price">
-                                <div class="four-cols">
-                                    <h2>Pequeño</h2>
-                                    <h2>CUP</h2>
-                                    <p class="price">{}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 product-name">
-                    <div class="menu-price">
-                        <div class="four-cols">
-                            <div class="menu-price">
-                                <div class="four-cols">
-                                    <h2>Mediana</h2>
-                                    <h2>CUP</h2>
-                                    <p class="price">{}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 product-name">
-                    <div class="menu-price">
-                        <div class="four-cols">
-                            <div class="menu-price">
-                                <div class="four-cols">
-                                    <h2>Mediana</h2>
-                                    <h2>CUP</h2>
-                                    <p class="price">{}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 product-name">
-                    <div class="menu-price">
-                        <div class="four-cols">
-                            <div class="menu-price">
-                                <div class="four-cols">
-                                    <h2>Grande</h2>
-                                    <h2>CUC</h2>
-                                    <p class="price">{}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 product-name">
-                    <div class="menu-price">
-                        <div class="four-cols">
-                            <div class="menu-price">
-                                <div class="four-cols">
-                                    <h2>Grande</h2>
-                                    <h2>CUP</h2>
-                                    <p class="price">{}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-2 price">
+                <p>{self.roundFloat(self.min)}</p>
+            </div>
+            <div class="col-2 price">
+                <p>{self.roundFloat(self.mid)}</p>
+            </div>
+            <div class="col-2 price">
+                <p>{self.roundFloat(self.max)}</p>
             </div>
         </div>
-        '''.format(self.name, self.cuc, self.cup, self.medcuc, self.medcup, self.grcuc, self.grcup)
+        '''
         return html
-    
+
     def generate_row(self) -> str:
         return self.__generate_row_code()
-        
+
+
+def print_comments(comment: str):
+    list(comment).pop(0)
+    print(f'<!--{comment}-->')
 
 if __name__ == "__main__":
+    is_comment = None
     while True:
+        choice = input()
+        comment_start = ['#', '/']
+
+        if len(choice) == 0: continue
+        elif choice[0] == '+': break
+        elif not is_comment and comment_start.__contains__(choice[0]):
+            if choice[0] == comment_start[1]:
+                is_comment = True
+            else:
+                print_comments(choice)
+            continue
+        elif is_comment and choice[0] == '*':
+            is_comment = False
+            continue
+        elif is_comment:
+            continue
+
+        choice = int(choice)
         name = input()
+        prod = None
 
-        if name == '':
-            break
-
-        prod = Cat3Product(name)
+        if choice == 1:
+            prod = Cat1Product(name)
+        elif choice == 2:
+            prod = Cat2Product(name)
+        else:
+            prod = Cat3Product(name)
+        
         print(prod.generate_row())
 
 
