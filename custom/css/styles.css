@@ -46,13 +46,23 @@
 
 .price > p{
     display: block;
+    margin-bottom: 0;
     text-align: center;
     font-size: 12px;
     font-weight: bold;
 }
 
-.product-name{
-    font-size: 14px;
+
+.product-name {
+    display: flex;
+    align-items: center;
+}
+
+.product-name > p{
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
     font-weight: bolder;
     font-family: 'Catamaran', sans-serif;
 }
