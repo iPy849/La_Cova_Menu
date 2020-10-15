@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./custom/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
     <title>La Cova</title>
 </head>
 <body>
     <!--navbar-->
-    <nav id="navbar-example2" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">La Cova</a>
+    <nav id="navbar-example2" class="navbar navbar-light bg-dark sticky-top">
+        <a class="navbar-brand" style="font-family: 'Lemonada', cursive; color: #F3A738;" href="#">La Cova</a>
         <ul class="nav nav-pills">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mr-5" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#entrantes">Entrantes</a>
+            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
+            <div class="dropdown-menu" style="transform: translateX(-55%);">
+              <a class="dropdown-item" href="#aperitivo">Aperitivo</a>
               <a class="dropdown-item" href="#para_picar">Para Picar</a>
-              <a class="dropdown-item" href="#ensaladas">Ensaladas</a>
-              <a class="dropdown-item" href="#cremas">Cremas</a>
+              <a class="dropdown-item" href="#crema">Cremas</a>
               <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#pizzas">Pizzas</a>
+              <a class="dropdown-item" href="#pizza">Pizzas</a>
+              <a class="dropdown-item" href="#agrego">Agregos</a>
+              <a class="dropdown-item" href="#especialidad">Especialidades</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#pasta">Pastas</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#pescado_y_marisco">Pescados y Mariscos</a>
+              <a class="dropdown-item" href="#carne">Carnes</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#postre">Postres</a>
+              <a class="dropdown-item" href="#infusion">Infusiones</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#babida">Bebidas</a>
+              <a class="dropdown-item" href="#coctelería">Coctelería</a>
             </div>
           </li>
         </ul>
@@ -28,9 +42,8 @@
     <!--End navbar-->
 
     <!--Menu-->
-
     <!--Aperitivos-->
-    <div class="container mt-4" id="aperitivo">
+    <div class="container pt-3" id="aperitivo">
         
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
@@ -173,7 +186,7 @@
     <!--End Para Picar-->
 
     <!--Cremas-->
-    <div class="container pt-5" id="cremas">
+    <div class="container pt-5" id="crema">
 
          <!--Encabezado-->
         <div class="row mb-0 dash-line">
@@ -251,7 +264,7 @@
     <!--Nuestras Famosas Pizzas
         Agregarle color y estilo a este campo
     -->
-    <div class="container pt-5" id="pizzas">
+    <div class="container pt-5" id="pizza">
         <div class="row mb-0">
             <div class="col-12">
                 <h2 class="menu-title base-offer">Nuestras famosas pizzas</h2>
@@ -260,11 +273,11 @@
     </div>
 
     <!--Pizza Base-->
-    <div class="container pt-5">
+    <div class="container pt-3">
          
-        <div class="row mb-0 dash-line">
+        <div class="row mb-0 dash-line ">
             <div class="col-6">
-                <h2 class="menu-title cols-3-header">Pizza base</h2>
+                <h2 class="menu-title">Pizza base</h2>
             </div>
             <div class="col-2 menu-price">
                 <div class="four-cols">
@@ -306,11 +319,10 @@
     <!--End Pizza Base-->
 
     <!--Agregos-->
-    <div class="container pt-5">
-         
+    <div class="container pt-5" id="agrego">
         <div class="row mb-0 dash-line">
             <div class="col-6">
-                <h2 class="menu-title cols-3-header">Agregos</h2>
+                <h2 class="menu-title">Agregos</h2>
             </div>
             <div class="col-2 menu-price">
                 <div class="four-cols">
@@ -576,7 +588,7 @@
     <!--End Agregos-->
     
     <!--Especialidades Pizzas-->
-    <div class="container pt-5">
+    <div class="container pt-5" id="especialidad">
          
         <div class="row mb-0 dash-line">
             <div class="col-6">
@@ -750,7 +762,7 @@
     <!--End Especialidades Pizzas-->
 
     <!--Pastas-->
-    <div class="container pt-5" id="pastas">
+    <div class="container pt-5" id="pasta">
 
         <!--Encabezado-->
        <div class="row mb-0 dash-line">
@@ -866,7 +878,7 @@
    <!--End Pastas-->
 
    <!--Pescados y mariscos-->
-    <div class="container pt-5" id="pescados_y_mariscos">
+    <div class="container pt-5" id="pescado_y_marisco">
 
         <!--Encabezado-->
        <div class="row mb-0 dash-line">
@@ -912,7 +924,7 @@
    <!--End Pescados y mariscos-->
 
    <!--Carnes-->
-    <div class="container pt-5" id="carnes">
+    <div class="container pt-5" id="carne">
 
         <!--Encabezado-->
        <div class="row mb-0 dash-line">
@@ -958,7 +970,7 @@
    <!--End Carnes-->
 
    <!--Postres-->
-    <div class="container pt-5" id="postres">
+    <div class="container pt-5" id="postre">
 
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
@@ -994,7 +1006,7 @@
    <!--End Postres-->
 
    <!--Infusiones-->
-    <div class="container pt-5" id="infusiones">
+    <div class="container pt-5" id="infusion">
 
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
@@ -1057,7 +1069,7 @@
 
 
    <!--Bebidas-->
-    <div class="container pt-5" id="postres">
+    <div class="container pt-5" id="postre">
 
         <!--Bebidas-->
         <div class="row mb-0 dash-line">
@@ -1069,6 +1081,15 @@
             </div>
         </div>
        <!--End Encabezado-->
+
+        <div class="row dash-line">
+            <div class="col-10 product-name">
+                <p>Agua (nacional)</p>
+            </div>
+            <div class="col-2 price">
+                <p>2.00</p>
+            </div>
+        </div>
 
         <div class="row dash-line">
             <div class="col-10 product-name">
@@ -1099,7 +1120,7 @@
         
         <div class="row dash-line">
             <div class="col-10 product-name">
-                <p>Refrescos (nacionales)</p>
+                <p>Refrescos (nacional)</p>
             </div>
             <div class="col-2 price">
                 <p>1.00</p>
@@ -1108,7 +1129,7 @@
         
         <div class="row dash-line">
             <div class="col-10 product-name">
-                <p>Refrescos (importados)</p>
+                <p>Refrescos (importado)</p>
             </div>
             <div class="col-2 price">
                 <p>1.50</p>
@@ -1135,7 +1156,7 @@
         
         <div class="row dash-line">
             <div class="col-10 product-name">
-                <p>Cervezas (nacionales)</p>
+                <p>Cervezas (nacional)</p>
             </div>
             <div class="col-2 price">
                 <p>2.00</p>
@@ -1144,7 +1165,7 @@
         
         <div class="row dash-line">
             <div class="col-10 product-name">
-                <p>Cervezas (importadas)</p>
+                <p>Cervezas (importada)</p>
             </div>
             <div class="col-2 price">
                 <p>2.50</p>
@@ -1162,7 +1183,7 @@
         
         <div class="row dash-line">
             <div class="col-10 product-name">
-                <p>Micheladas (con cerveza importad)</p>
+                <p>Micheladas (con cerveza importada)</p>
             </div>
             <div class="col-2 price">
                 <p>3.00</p>
@@ -1185,7 +1206,7 @@
     <!--Coctelería
         Agregarle color y estilo a este campo
     -->
-    <div class="container pt-5" id="cocteleria">
+    <div class="container pt-5" id="coctelería">
         <div class="row mb-0">
             <div class="col-12">
                 <h2 class="menu-title base-offer">Coctelería - 3cuc</h2>
