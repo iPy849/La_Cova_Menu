@@ -91,6 +91,10 @@
     animation-timing-function: ease-in;
 }
 
+.selected {
+    background-color: gray;
+}
+
 @keyframes listen {
     0%{
         transform: translateY(0px) ;
