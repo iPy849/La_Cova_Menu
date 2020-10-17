@@ -1,3 +1,5 @@
+/*
+
 #Aperitivo
 1
 Aceitunas verdes
@@ -60,9 +62,7 @@ Crema de champiñones
 3.00
 
 
-/*
-    En vez de grande, le pongo familiar
-*/
+
 #Nuestras Famosas Pizzas
 3
 Pizza base
@@ -150,9 +150,7 @@ Langosta
 8.75
 
 
-/*
-    Poner los ingredientes que llevan
-*/
+
 #Especialidades de Pizzas
 3
 Margarita
@@ -338,5 +336,319 @@ Copa de vino
 
 
 #Coctelería - 3cuc
+
+*/
+
+#Jugos
+1
+Jugos de sabores variados
+1.00
+
+#Aguas y Sodas
+1
+Aguas nacionales
+1.00
+1
+Aguas importadas
+2.00
+1
+Agua tónica (importada)
+2.50
+1
+Maltas
+1.00
+1
+Refrescos nacionales
+1.00
+1
+Refrescos importados
+1.50
+1
+Redbull
+3.00
+
+#Cervezas
+1
+Cervezas nacionales
+2.00
+1
+Cervezas importadas
+2.50
+1
+Michleadas con cerveza nacional
+2.50
+1
+Michleadas con cerveza importada
+3.00
+
+
+
+#Cigarros
+1
+Cigarros nacionales
+1.00
+1
+Cigarros Hollywood
+1.30
+1
+Cigarros Importados
+2.40
+1
+Cigarro Lucky Strike click & roll
+3.00
+1
+Cigarro Lucky Strike box
+3.00
+1
+Cigarro Dunhill
+3.00
+
+
+
+#Rones (trago 45ml)
+1
+Havana Club Añejo Blanco
+1.00
+1
+Havana Club Añejo 3 Años
+1.30
+1
+Havana Club Añejo Especial
+1.50
+1
+Havana Club Añejo Reserva
+1.75
+1
+Havana Club Añejo 7 Años
+2.00
+1
+Havana Club Añejo 15 Años
+8.00
+1
+Ron Vigía Añejo Extra
+3.00
+1
+Ron Cubay Añejo 10 Años
+2.00
+1
+Ron Santiago de Cuba Añejo
+2.00
+1
+Ron Santiago de Cuba Extra Añejo 20 Años
+8.50
+1
+Ron Santiago de Cuba Extra Añejo 25 Años
+18.00
+
+
+
+#Whiskys (trago 45ml)
+1
+Whiskys Jhon Barr
+1.50
+1
+Whiskys Jhon Bar Reserva
+1.50
+1
+Whiskys Ballantines Finest
+2.00
+1
+Whiskys Ballantines Finest Oro
+3.00
+1
+Whiskys Chivas Regal 12 Años
+3.50
+1
+Whiskys Johnnie Walker Etiqueta Roja
+3.00
+1
+Whiskys Johnnie Walker Etiqueta Negra
+4.00
+1
+Whiskys Johnnie Walker Etiqueta Dorada
+9.00
+1
+Whiskys Johnnie Walker Etiqueta Azul
+21.00
+
+
+
+#Vodka (trago 45ml)
+1
+Vodka Stolichnaya
+1.50
+1
+Vodka Samarskaya
+1.50
+
+
+
+
+#Ginebra (trago 45ml)
+1
+Ginebra Beefeater
+1.50
+
+
+
+#Vermouth (trago 45ml)
+1
+Vermouth
+1.50
+
+
+
+#Cognac (trago 45ml)
+1
+Cognac Hennessy Paradis Extra
+49.00
+
+
+
+#Brandys (trago 45ml)
+1
+Brandy Carlos I
+5.00
+
+
+
+#Tequila (trago 45ml)
+1
+Olmeca Blanco
+1.50
+1
+Olmeca Reposado
+2.00
+1
+José Cuervo Oro
+2.00
+
+
+
+#Cremas y Licores (trago 45ml)
+1
+Crema de Cacao
+1.50
+1
+Licor Triple Sec Kuyper
+1.80
+1
+Licor Coconut Bahali
+2.00
+1
+Licor Anís del Mono Seco
+2.00
+1
+Licor Anís del Mono Dulce
+2.00
+1
+Licor Marrasquino Kuiper
+2.00
+1
+Licor Limocello
+2.00
+1
+Curacao Rojo
+2.00
+1
+Crema Bayley's
+2.00
+1
+Licor Cointreau
+2.50
+1
+Licor Frangelico
+2.50
+1
+Licor Sambuca
+3.00
+1
+Licor Amaretto Disaronno
+3.00
+1
+Crema Sheridan's
+3.50
+
+
+
+#Limonada
+1
+Limonada
+1.50
+
+
+
+/*
+#Cocteles especiales de la casa - 3cuc
+*/
+
+
+
+#Cocteles especiales de casa
+1
+Sangría
+0
+1
+Ron Collins
+0
+1
+Mojito
+0
+1
+Cubata
+0
+1
+Piña Colada
+0
+1
+ScrewDriver
+0
+1
+Cuba Libre
+0
+1
+Cubanito
+0
+1
+Bowling
+0
+1
+Havana Special
+0
+1
+Alexander
+0
+1
+Bloody Mary
+0
+1
+Martini Dulce
+0
+1
+Martini Seco
+0
+1
+Gintonic
+0
+1
+Margarita
+0
+1
+Tequila Sunrise
+0
+1
+Presidente
+0
+1
+Mary Pickford
+0
+1
+Manhattan
+0
+1
+San Francisco
+0
+
+
 
 +

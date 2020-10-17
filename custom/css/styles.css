@@ -24,6 +24,14 @@
     font-size: 10px;
 }
 
+.base-offer{
+    font-weight: bolder;
+    font-family: 'Lemonada', cursive;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+
 .four-cols{
     font-size: 14px;
 }
@@ -69,6 +77,39 @@
 
 .dash-line{
     border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.header-icon{
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.float-anim{
+    animation: listen 1s infinite ;
+    animation-timing-function: ease-in;
+}
+
+@keyframes listen {
+    0%{
+        transform: translateY(0px) ;
+    }
+
+    25%{
+        transform: translateY(1px) ;
+    }
+
+    50%{
+        transform: translateY(0px) ;
+    }
+
+    75%{
+        transform: translateY(-1px) ;
+    }
+
+    100%{
+        transform: translateY(0px) ;
+    }
 }
 /* End Product */
 
