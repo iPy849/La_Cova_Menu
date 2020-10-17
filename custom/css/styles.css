@@ -5,10 +5,11 @@
     font-size: 28px;
     text-align: start;
     font-family: 'Catamaran', sans-serif;
+    font-weight: bolder;
 }
 
 .little-header{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bolder;
     display: block;
 }
@@ -21,7 +22,7 @@
 
 .menu-price h2{
     text-align: center  ;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .base-offer{
@@ -56,7 +57,7 @@
     display: block;
     margin-bottom: 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bolder;
 }
 
