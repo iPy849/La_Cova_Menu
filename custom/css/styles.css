@@ -74,6 +74,12 @@
     align-items: center;
 }
 
+.description {
+    font-size: small;
+    text-align: start;
+    color: rgb(69, 69, 69);
+}
+
 .product-name > p{
     margin-bottom: 0;
     padding-top: 5px;
