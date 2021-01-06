@@ -3,6 +3,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     //Trigger de todos los cambios
     function TriggerChange(currency){
+        currency = currency.toLowerCase();
+        if(currency === currency_settings.dataset.currency) return;
+
+        //Guarda el nuevo valor de la moneda
         currency_settings.dataset.currency = currency;
 
         //cambia los precios
@@ -19,6 +23,8 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     //Empezando en cuc
+    console.log(currency_settings);
+
     TriggerChange('cup');
 
     document.querySelector('#cuc_option').onclick = () => TriggerChange('cuc');
