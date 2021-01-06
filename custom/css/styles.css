@@ -131,6 +131,27 @@
 }
 /* End Product */
 
+/* Fixed bottom button */
+.custom-button{
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(69, 69, 69);
+    height: min-content;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 1%;
+    right: 1%; 
+    z-index: 10;
+}
+
+.custom-button:focus{
+    outline: none;
+}
+/* End Fixed bottom button */
+
 /* View Controller*/
 .disable{
     display: none;

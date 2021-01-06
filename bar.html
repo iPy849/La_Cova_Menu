@@ -1,1229 +1,1181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./custom/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/apple-touch-icon-72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/apple-touch-icon-114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/apple-touch-icon-144.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./custom/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="./img/apple-touch-icon-72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="./img/apple-touch-icon-114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="./img/apple-touch-icon-144.png"
+    />
     <title>La Cova</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Settings -->
+    <span id="currency-data" data-currency="cup"></span>
+
     <!--navbar-->
     <nav id="navbar-example2" class="navbar navbar-light bg-dark sticky-top">
-        <a class="navbar-brand" style="font-family: 'DM Serif Text', serif; color: #ffc400; font-size: 28px;-webkit-text-stroke: 0.5px red;" href="#">La Cova</a>
-        <ul class="nav nav-pills">
-            <li>
-                <a href="./index.html"><img class="header-icon mr-1 p-1 float-anim" src="./img/food.svg" alt="Bar"></a>
-            </li>
-            <li>
-                <a href="./bar.html"><img class="header-icon mr-1 p-2 float-anim selected" src="./img/bar.svg" alt="Bar"></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
-                <div class="dropdown-menu" style="transform: translateX(-67%);">
-                <a class="dropdown-item" href="#agua_y_soda">Aguas y Sodas</a>
-                <a class="dropdown-item" href="#cerveza">Cervezas</a>
-                <a class="dropdown-item" href="#cigarro">Cigarros</a>
-                <div role="separator" class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#ron">Rones</a>
-                <a class="dropdown-item" href="#whisky">Whiskys</a>
-                <a class="dropdown-item" href="#vodka">Vodka</a>
-                <a class="dropdown-item" href="#ginebra">Ginebra</a>
-                <a class="dropdown-item" href="#vermouth">Vermouth</a>
-                <a class="dropdown-item" href="#cognac">Cognac</a>
-                <a class="dropdown-item" href="#brandy">Brandys</a>
-                <a class="dropdown-item" href="#tequila">Tequila</a>
-                <a class="dropdown-item" href="#crema_y_licor">Cremas y Licores</a>
-                <a class="dropdown-item" href="#limonada">Limonada</a>
-                <a class="dropdown-item" href="#coctel_de_la_casa">Cocteles de la casa</a>
-                </div>
-            </li>
-        </ul>
+      <a
+        class="navbar-brand"
+        style="
+          font-family: 'DM Serif Text', serif;
+          color: #ffc400;
+          font-size: 28px;
+          -webkit-text-stroke: 0.5px red;
+        "
+        href="#"
+        >La Cova</a
+      >
+      <ul class="nav nav-pills">
+        <li>
+          <a href="./index.html"
+            ><img
+              class="header-icon mr-1 p-1 float-anim"
+              src="./img/food.svg"
+              alt="Bar"
+          /></a>
+        </li>
+        <li>
+          <a href="./bar.html"
+            ><img
+              class="header-icon mr-1 p-2 float-anim selected"
+              src="./img/bar.svg"
+              alt="Bar"
+          /></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle text-white"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >Menu</a
+          >
+          <div class="dropdown-menu" style="transform: translateX(-67%)">
+            <a class="dropdown-item" href="#agua_y_soda">Aguas y Sodas</a>
+            <a class="dropdown-item" href="#cerveza">Cervezas</a>
+            <a class="dropdown-item" href="#cigarro">Cigarros</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#ron">Rones</a>
+            <a class="dropdown-item" href="#whisky">Whiskys</a>
+            <a class="dropdown-item" href="#vodka">Vodka</a>
+            <a class="dropdown-item" href="#ginebra">Ginebra</a>
+            <a class="dropdown-item" href="#vermouth">Vermouth</a>
+            <a class="dropdown-item" href="#cognac">Cognac</a>
+            <a class="dropdown-item" href="#brandy">Brandys</a>
+            <a class="dropdown-item" href="#tequila">Tequila</a>
+            <a class="dropdown-item" href="#crema_y_licor">Cremas y Licores</a>
+            <a class="dropdown-item" href="#limonada">Limonada</a>
+            <a class="dropdown-item" href="#coctel_de_la_casa"
+              >Cocteles de la casa</a
+            >
+          </div>
+        </li>
+      </ul>
     </nav>
     <!--End navbar-->
 
     <!--Menu-->
-    <!--Jugos-->
-    <div class="container pt-3" id="jugo">
-        
+    <div class="mb-5">
+      <!--Jugos-->
+      <div class="container pt-3" id="jugo">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title">Jugos</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title">Jugos</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Jugos de sabores variados</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.00</p>
-            </div>
-        </div>
-        
-    </div>
-    <!--End Aperitivos-->
-
-
-    <!--Aguas y Sodas-->
-    <div class="container pt-5" id="agua_y_soda">
-
-        <!--Encabezado-->
-        <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title">Aguas y Sodas</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
-        </div>
-        <!--End Encabezado-->
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Aguas nacionales</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.00</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Aguas importadas</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Agua tónica (importada)</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.00</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Agua tónica (importada)</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Maltas</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Refrescos nacionales</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.00</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Refrescos importados</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Redbull</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.50</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Time Flies</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.50</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Para Picar-->
-
-    <!--Cervezas-->
-    <div class="container pt-5" id="cerveza">
-
-         <!--Encabezado-->
-        <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title">Cervezas</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
-        </div>
-        <!--End Encabezado-->
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Cervezas nacionales</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Cervezas importadas</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Michleadas con cerveza nacional</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Michleadas con cerveza importada</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.50</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Cremas-->
-
-    <!--Cigarros-->
-    <div class="container pt-5 disable" id="cigarro">
-
-        <!--Encabezado-->
-       <div class="row mb-0 dash-line">
-           <div class="col-10">
-               <h2 class="menu-title">Cigarros</h2>
-           </div>
-           <div class="col-2 menu-price">
-               <h2 class="">CUC:</h2>
-           </div>
-       </div>
-       <!--End Encabezado-->
-
-       <div class="row dash-line">
-        <div class="col-10 product-name">
-            <p>Cigarros nacionales</p>
-        </div>
-        <div class="col-2 price">
+          <div class="col-10 product-name">
+            <p>Jugos de sabores variados</p>
+          </div>
+          <div class="col-2 price">
             <p>1.00</p>
+          </div>
         </div>
-    </div>
-    
+      </div>
+      <!--End Aperitivos-->
 
-    <div class="row dash-line">
-        <div class="col-10 product-name">
+      <!--Aguas y Sodas-->
+      <div class="container pt-5" id="agua_y_soda">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title">Aguas y Sodas</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Aguas nacionales</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Aguas importadas</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Agua tónica (importada)</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Agua tónica (importada)</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Maltas</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Refrescos nacionales</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Refrescos importados</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Redbull</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Time Flies</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.50</p>
+          </div>
+        </div>
+      </div>
+      <!--End Para Picar-->
+
+      <!--Cervezas-->
+      <div class="container pt-5" id="cerveza">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title">Cervezas</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Cervezas nacionales</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Cervezas importadas</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Michleadas con cerveza nacional</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Michleadas con cerveza importada</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.50</p>
+          </div>
+        </div>
+      </div>
+      <!--End Cremas-->
+
+      <!--Cigarros-->
+      <div class="container pt-5 disable" id="cigarro">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title">Cigarros</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Cigarros nacionales</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
             <p>Cigarros Hollywood</p>
-        </div>
-        <div class="col-2 price">
+          </div>
+          <div class="col-2 price">
             <p>1.30</p>
+          </div>
         </div>
-    </div>
-    
 
-    <div class="row dash-line">
-        <div class="col-10 product-name">
+        <div class="row dash-line">
+          <div class="col-10 product-name">
             <p>Cigarros Importados</p>
-        </div>
-        <div class="col-2 price">
+          </div>
+          <div class="col-2 price">
             <p>2.40</p>
+          </div>
         </div>
-    </div>
-    
 
-    <div class="row dash-line">
-        <div class="col-10 product-name">
+        <div class="row dash-line">
+          <div class="col-10 product-name">
             <p>Cigarro Lucky Strike click & roll</p>
-        </div>
-        <div class="col-2 price">
+          </div>
+          <div class="col-2 price">
             <p>3.00</p>
+          </div>
         </div>
-    </div>
-    
 
-    <div class="row dash-line">
-        <div class="col-10 product-name">
+        <div class="row dash-line">
+          <div class="col-10 product-name">
             <p>Cigarro Lucky Strike box</p>
-        </div>
-        <div class="col-2 price">
+          </div>
+          <div class="col-2 price">
             <p>3.00</p>
+          </div>
         </div>
-    </div>
-    
 
-    <div class="row dash-line">
-        <div class="col-10 product-name">
+        <div class="row dash-line">
+          <div class="col-10 product-name">
             <p>Cigarro Dunhill</p>
-        </div>
-        <div class="col-2 price">
+          </div>
+          <div class="col-2 price">
             <p>3.00</p>
+          </div>
         </div>
-    </div>
+      </div>
+      <!--End Pastas-->
 
-   </div>
-   <!--End Pastas-->
-
-   <!--Rones-->
-    <div class="container pt-5" id="ron">
-
+      <!--Rones-->
+      <div class="container pt-5" id="ron">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Rones (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
-        </div>
-       <!--End Encabezado-->
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Añejo Blanco</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.00</p>
-            </div>
-        </div>
-    
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Añejo 3 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Añejo Especial</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Añejo Reserva</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Añejo 7 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Selección de Maestro</p>
-            </div>
-            <div class="col-2 price">
-                <p>6.00</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Club Añejo 15 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>20.00</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Ron Vigía Añejo Extra</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ron Cubay Añejo 10 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>12.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ron Santiago Carta Blanca</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ron Santiago de Cuba Añejo</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ron Santiago de Cuba Añejo 11 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>5.00</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ron Santiago de Cuba Extra Añejo 20 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>20.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Ron Santiago de Cuba Extra Añejo 25 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>20.00</p>
-            </div>
-        </div>
-
-   </div>
-   <!--End Pescados y mariscos-->
-
-   <!--Whiskys-->
-   <div class="container pt-5" id="whisky">
-
-        <!--Encabezado-->
-        <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Whiskys (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
-        </div>
-        <!--End Encabezado-->
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Whiskys Jhon Barr</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Whiskys Jhon Bar Reserva</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Ballantines Finest</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys J'B</p>
-            </div>
-            <div class="col-2 price">
-                <p>4.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Whiskys Ballantines Finest Oro</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Chivas Regal 12 Años</p>
-            </div>
-            <div class="col-2 price">
-                <p>5.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Johnnie Walker Etiqueta Roja</p>
-            </div>
-            <div class="col-2 price">
-                <p>4.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Johnnie Walker Etiqueta Negra</p>
-            </div>
-            <div class="col-2 price">
-                <p>5.00</p>
-            </div>
-        </div>
-       
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Swing</p>
-            </div>
-            <div class="col-2 price">
-                <p>8.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Johnnie Walker Etiqueta Dorada</p>
-            </div>
-            <div class="col-2 price">
-                <p>10.00</p>
-            </div>
-        </div>
-       
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Buchanan's</p>
-            </div>
-            <div class="col-2 price">
-                <p>7.00</p>
-            </div>
-        </div>
-
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Whiskys Johnnie Walker Etiqueta Azul</p>
-            </div>
-            <div class="col-2 price">
-                <p>35.00</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Vodka-->
-   <div class="container pt-5" id="vodka">
-
-        <!--Encabezado-->
-        <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Vodka (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
-        </div>
-        <!--End Encabezado-->
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Vodka Stolichnaya</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Vodka Samarskaya</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Vodka Absolut</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Ginebra-->
-    <div class="container pt-5" id="ginebra">
-
-        <!--Encabezado-->
-        <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Ginebra (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Rones (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ginebra Beefeater</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Havana Club Añejo Blanco</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.00</p>
+          </div>
         </div>
 
-    </div>
-    <!--End Pescados y mariscos-->
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Havana Club Añejo 3 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
 
-    <!--Vermouth-->
-    <div class="container pt-5 disable" id="vermouth">
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Havana Club Añejo Especial</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
 
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Havana Club Añejo Reserva</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Havana Club Añejo 7 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Havana Club Selección de Maestro</p>
+          </div>
+          <div class="col-2 price">
+            <p>6.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Havana Club Añejo 15 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>20.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Ron Vigía Añejo Extra</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Ron Cubay Añejo 10 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>12.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Ron Santiago Carta Blanca</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Ron Santiago de Cuba Añejo</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Ron Santiago de Cuba Añejo 11 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>5.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Ron Santiago de Cuba Extra Añejo 20 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>20.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Ron Santiago de Cuba Extra Añejo 25 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>20.00</p>
+          </div>
+        </div>
+      </div>
+      <!--End Pescados y mariscos-->
+
+      <!--Whiskys-->
+      <div class="container pt-5" id="whisky">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Vermouth (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Whiskys (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Whiskys Jhon Barr</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Whiskys Jhon Bar Reserva</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Ballantines Finest</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys J'B</p>
+          </div>
+          <div class="col-2 price">
+            <p>4.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Whiskys Ballantines Finest Oro</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Chivas Regal 12 Años</p>
+          </div>
+          <div class="col-2 price">
+            <p>5.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Johnnie Walker Etiqueta Roja</p>
+          </div>
+          <div class="col-2 price">
+            <p>4.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Johnnie Walker Etiqueta Negra</p>
+          </div>
+          <div class="col-2 price">
+            <p>5.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Swing</p>
+          </div>
+          <div class="col-2 price">
+            <p>8.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Johnnie Walker Etiqueta Dorada</p>
+          </div>
+          <div class="col-2 price">
+            <p>10.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Buchanan's</p>
+          </div>
+          <div class="col-2 price">
+            <p>7.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Whiskys Johnnie Walker Etiqueta Azul</p>
+          </div>
+          <div class="col-2 price">
+            <p>35.00</p>
+          </div>
+        </div>
+      </div>
+      <!--End Pescados y mariscos-->
+
+      <!--Vodka-->
+      <div class="container pt-5" id="vodka">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title little-header">Vodka (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Vodka Stolichnaya</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Vodka Samarskaya</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Vodka Absolut</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+      </div>
+      <!--End Pescados y mariscos-->
+
+      <!--Ginebra-->
+      <div class="container pt-5" id="ginebra">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title little-header">Ginebra (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Vermouth</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Ginebra Beefeater</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
         </div>
+      </div>
+      <!--End Pescados y mariscos-->
 
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Cognac-->
-    <div class="container pt-5" id="cognac">
-
+      <!--Vermouth-->
+      <div class="container pt-5 disable" id="vermouth">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Cognac (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Vermouth (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Cognac Hennessy Paradis Extra</p>
-            </div>
-            <div class="col-2 price">
-                <p>49.00</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Vermouth</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
         </div>
+      </div>
+      <!--End Pescados y mariscos-->
 
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Brandys-->
-    <div class="container pt-5" id="brandy">
-
+      <!--Cognac-->
+      <div class="container pt-5" id="cognac">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Brandys (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Cognac (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Brandy Fundador</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Cognac Hennessy Paradis Extra</p>
+          </div>
+          <div class="col-2 price">
+            <p>49.00</p>
+          </div>
         </div>
+      </div>
+      <!--End Pescados y mariscos-->
 
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Brandy Carlos I</p>
-            </div>
-            <div class="col-2 price">
-                <p>5.00</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Tequila-->
-    <div class="container pt-5" id="tequila">
-
+      <!--Brandys-->
+      <div class="container pt-5" id="brandy">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Tequila (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
-        </div>
-        <!--End Encabezado-->
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Olmeca Blanco</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Olmeca Reposado</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>José Cuervo Oro</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Cremas y Licores-->
-    <div class="container pt-5" id="crema_y_licor">
-
-        <!--Encabezado-->
-        <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Cremas y Licores (trago 45ml)</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Brandys (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Crema de Cacao</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.50</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Triple Sec Kuyper</p>
-            </div>
-            <div class="col-2 price">
-                <p>1.80</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Brandy Fundador</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
         </div>
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Coconut Bahali</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Brandy Carlos I</p>
+          </div>
+          <div class="col-2 price">
+            <p>5.00</p>
+          </div>
         </div>
+      </div>
+      <!--End Pescados y mariscos-->
 
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Anís del Mono Seco</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Anís del Mono Dulce</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Marrasquino Kuiper</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Limocello</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Curacao Rojo</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Crema Bayley's</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
-        </div>
-
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Frangelico</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Kahlúa</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.50</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Cointreau</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Sambuca</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-        
-        <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Licor Amaretto Disaronno</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.00</p>
-            </div>
-        </div>
-        
-
-        <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Crema Sheridan's</p>
-            </div>
-            <div class="col-2 price">
-                <p>3.50</p>
-            </div>
-        </div>
-
-    </div>
-    <!--End Pescados y mariscos-->
-
-    <!--Limonada-->
-    <div class="container pt-5" id="limonada">
-
+      <!--Tequila-->
+      <div class="container pt-5" id="tequila">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Limonada</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Tequila (trago 45ml)</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Olmeca Blanco</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Olmeca Reposado</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>José Cuervo Oro</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+      </div>
+      <!--End Pescados y mariscos-->
+
+      <!--Cremas y Licores-->
+      <div class="container pt-5" id="crema_y_licor">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title little-header">
+              Cremas y Licores (trago 45ml)
+            </h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Limonada</p>
-            </div>
-            <div class="col-2 price">
-                <p>2.00</p>
-            </div>
+          <div class="col-10 product-name">
+            <p>Crema de Cacao</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.50</p>
+          </div>
         </div>
-        
 
-    </div>
-    <!--End Pescados y mariscos-->
-    
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Triple Sec Kuyper</p>
+          </div>
+          <div class="col-2 price">
+            <p>1.80</p>
+          </div>
+        </div>
 
-    <!--Cocteles especiales de la casa-->
-    <div class="container pt-5" id="coctel_de_la_casa">
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Coconut Bahali</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
 
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Anís del Mono Seco</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Anís del Mono Dulce</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Marrasquino Kuiper</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Limocello</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Curacao Rojo</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Crema Bayley's</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Frangelico</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Kahlúa</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.50</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Cointreau</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Sambuca</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Licor Amaretto Disaronno</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.00</p>
+          </div>
+        </div>
+
+        <div class="row dash-line disable">
+          <div class="col-10 product-name">
+            <p>Crema Sheridan's</p>
+          </div>
+          <div class="col-2 price">
+            <p>3.50</p>
+          </div>
+        </div>
+      </div>
+      <!--End Pescados y mariscos-->
+
+      <!--Limonada-->
+      <div class="container pt-5" id="limonada">
         <!--Encabezado-->
         <div class="row mb-0 dash-line">
-            <div class="col-10">
-                <h2 class="menu-title little-header">Cocteles de la casa</h2>
-            </div>
-            <div class="col-2 menu-price">
-                <h2 class="">CUC:</h2>
-            </div>
+          <div class="col-10">
+            <h2 class="menu-title little-header">Limonada</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
         </div>
         <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Sangría</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Limonada</p>
+          </div>
+          <div class="col-2 price">
+            <p>2.00</p>
+          </div>
         </div>
-        
+      </div>
+      <!--End Pescados y mariscos-->
+
+      <!--Cocteles especiales de la casa-->
+      <div class="container pt-5" id="coctel_de_la_casa">
+        <!--Encabezado-->
+        <div class="row mb-0 dash-line">
+          <div class="col-10">
+            <h2 class="menu-title little-header">Cocteles de la casa</h2>
+          </div>
+          <div class="col-2 menu-price">
+            <h2 class="currency_info">CUC:</h2>
+          </div>
+        </div>
+        <!--End Encabezado-->
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Ron Collins</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Sangría</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Mojito</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Ron Collins</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Cubata</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Mojito</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Piña Colada</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Cubata</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>ScrewDriver</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Piña Colada</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Cuba Libre</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>ScrewDriver</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Cubanito</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Cuba Libre</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
+
+        <div class="row dash-line">
+          <div class="col-10 product-name">
+            <p>Cubanito</p>
+          </div>
+          <div class="col-2 price">3.00</div>
+        </div>
 
         <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Bowling</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Bowling</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Havana Special</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Havana Special</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Alexander</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Alexander</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Bloody Mary</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Bloody Mary</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Martini Dulce</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Martini Dulce</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Martini Seco</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Martini Seco</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Gintonic</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Gintonic</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Margarita</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Margarita</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Tequila Sunrise</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Tequila Sunrise</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Presidente</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Presidente</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line">
-            <div class="col-10 product-name">
-                <p>Mary Pickford</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Mary Pickford</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>Manhattan</p>
-            </div>
-            <div class="col-2 price">
-                3.00
-            </div>
+          <div class="col-10 product-name">
+            <p>Manhattan</p>
+          </div>
+          <div class="col-2 price">3.00</div>
         </div>
-        
 
         <div class="row dash-line disable">
-            <div class="col-10 product-name">
-                <p>San Francisco</p>
-            </div>
-            <div class="col-2 price">
-            </div>
+          <div class="col-10 product-name">
+            <p>San Francisco</p>
+          </div>
+          <div class="col-2 price"></div>
         </div>
-        
-
+      </div>
     </div>
+
     <!--End Pescados y mariscos-->
-    
 
+    <!--End Menu-->
 
-
-   <!--End Menu-->
+    <!-- Currency change -->
+    <div>
+      <button
+        class="custom-button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Moneda
+      </button>
+      <div class="dropdown-menu">
+        <button class="dropdown-item" id="cuc_option">CUC</button>
+        <button class="dropdown-item" id="cup_option">CUP</button>
+      </div>
+    </div>
+    <!-- End Currency change -->
 
     <!-- jQuery first-->
-    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-        crossorigin = "anonymous">
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Then Popper.js-->
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-        integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
-        crossorigin = "anonymous">
-    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Then Bootstrap JS -->
-    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
-        integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
-        crossorigin = "anonymous">
-    </script>
-</body>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Custom scripts-->
+    <script src="./js/currency.js"></script>
+  </body>
 </html>
